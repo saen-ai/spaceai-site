@@ -147,7 +147,7 @@ export default function Home() {
             {/* Left phone — tilted */}
             <div className="hidden sm:block w-[240px] flex-shrink-0 opacity-60" style={{ transform: "perspective(1000px) rotateY(8deg) rotateZ(2deg)" }}>
               <div className="rounded-[28px] overflow-hidden border-2 border-dark-border shadow-2xl">
-                <img src="/images/screen-styles.png" alt="Style selection" className="w-full" />
+                <img src="/images/screen-styles.jpg" alt="Style selection" className="w-full" />
               </div>
             </div>
 
