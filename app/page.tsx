@@ -154,14 +154,14 @@ export default function Home() {
             {/* Center phone — hero */}
             <div className="w-[280px] sm:w-[300px] flex-shrink-0 relative z-10">
               <div className="rounded-[32px] overflow-hidden border-2 border-gold/30 shadow-[0_20px_80px_rgba(232,185,49,0.15)]">
-                <img src="/images/screen-result.png" alt="AI design result" className="w-full" />
+                <img src="/images/screen-result.jpg" alt="AI design result" className="w-full" />
               </div>
             </div>
 
             {/* Right phone — tilted */}
             <div className="hidden sm:block w-[240px] flex-shrink-0 opacity-60" style={{ transform: "perspective(1000px) rotateY(-8deg) rotateZ(-2deg)" }}>
               <div className="rounded-[28px] overflow-hidden border-2 border-dark-border shadow-2xl">
-                <img src="/images/screen-home.png" alt="Home screen" className="w-full" />
+                <img src="/images/screen-home.jpg" alt="Home screen" className="w-full" />
               </div>
             </div>
           </div>
