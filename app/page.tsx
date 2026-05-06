@@ -1,3 +1,11 @@
+import AppStoreButton from "@/components/AppStoreButton";
+import Reveal from "@/components/Reveal";
+import BeforeAfterSlider from "@/components/home/BeforeAfterSlider";
+import HowItWorks from "@/components/home/HowItWorks";
+import StyleShowcase from "@/components/home/StyleShowcase";
+import FAQ from "@/components/home/FAQ";
+import EmailCapture from "@/components/home/EmailCapture";
+
 export default function Home() {
   return (
     <>
@@ -39,6 +47,10 @@ export default function Home() {
             Watch AI transform your space in&nbsp;seconds.
           </p>
 
+          {/* Download CTA */}
+          <div className="animate-fade-up stagger-4 mt-10 flex justify-center">
+            <AppStoreButton className="px-7 py-3.5 text-base shadow-[0_10px_40px_rgba(232,185,49,0.25)]" />
+          </div>
         </div>
 
         {/* Scroll indicator */}
@@ -94,35 +106,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Second example */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mt-6">
-            <div className="relative group">
-              <div className="overflow-hidden rounded-2xl border border-dark-border">
-                <img
-                  src="/spaceai-site/images/example-before.jpg"
-                  alt="Living room before"
-                  className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-dark/80 backdrop-blur-sm border border-dark-border text-xs font-medium text-text-secondary">
-                Before
-              </div>
-            </div>
-            <div className="relative group">
-              <div className="overflow-hidden rounded-2xl border border-gold/20">
-                <img
-                  src="/spaceai-site/images/example-after.jpg"
-                  alt="Living room after modern redesign"
-                  className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-gold/90 text-dark text-xs font-semibold">
-                After — Modern Style
-              </div>
-            </div>
-          </div>
         </div>
       </section>
+
+      {/* ═══════════════════════════════════════
+          INTERACTIVE BEFORE/AFTER SLIDER
+          ═══════════════════════════════════════ */}
+      <BeforeAfterSlider />
+
+      {/* ═══════════════════════════════════════
+          HOW IT WORKS
+          ═══════════════════════════════════════ */}
+      <HowItWorks />
 
       {/* ═══════════════════════════════════════
           APP SCREENS — Phone mockups
@@ -167,6 +162,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ═══════════════════════════════════════
+          STYLE SHOWCASE — 12 styles interactive
+          ═══════════════════════════════════════ */}
+      <Reveal>
+        <StyleShowcase />
+      </Reveal>
 
       {/* ═══════════════════════════════════════
           FEATURES
@@ -236,6 +238,20 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════
+          FAQ
+          ═══════════════════════════════════════ */}
+      <Reveal>
+        <FAQ />
+      </Reveal>
+
+      {/* ═══════════════════════════════════════
+          EMAIL CAPTURE
+          ═══════════════════════════════════════ */}
+      <Reveal>
+        <EmailCapture />
+      </Reveal>
+
+      {/* ═══════════════════════════════════════
           BOTTOM CTA — with background image
           ═══════════════════════════════════════ */}
       <section className="relative overflow-hidden">
@@ -255,6 +271,10 @@ export default function Home() {
           <p className="mt-6 text-white/50 max-w-md mx-auto">
             Join thousands of homeowners and designers transforming rooms with AI.
           </p>
+
+          <div className="mt-10 flex justify-center">
+            <AppStoreButton className="px-7 py-3.5 text-base shadow-[0_10px_40px_rgba(232,185,49,0.25)]" />
+          </div>
         </div>
       </section>
     </>
